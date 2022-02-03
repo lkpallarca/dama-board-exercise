@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 504px;
+    width: 504px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.out {
+    position: relative;
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border: 1px solid transparent;
+}
+
+.in-1:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 1px;
+	border-left: 0px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 70px solid white;
+}
+
+.in-2:after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -2px;
+	border-left: 70px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 70px solid white;
+}
+
+.in-3:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: 2px;
+	border-left: 0px solid transparent;
+	border-right: 70px solid transparent;
+	border-top: 70px solid white;
+}
+
+.in-4:after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+	border-left: 70px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 70px solid white;
+}
